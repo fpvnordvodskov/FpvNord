@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sikkerhed – FPV Nord</title>
+  <meta name="description" content="Sikkerhed, regler og gode vaner hos FPV Nord."/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header class="nav">
+  <div class="navInner">
+    <div class="brand"><span class="dot"></span> FPV Nord</div>
+    <nav class="links">
+      <a href="index.html">Forside</a>
+      <a href="kursus.html">Kursus</a>
+      <a class="active" href="regler.html">Sikkerhed</a>
+      <a href="faq.html">FAQ</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="badge">🛡️ Sikkerhed</div>
+    <h1>Sikkerhed & regler</h1>
+    <p>Her er de vigtigste regler vi følger, så det er trygt for alle.</p>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Før du flyver</h2>
+      <ul>
+        <li>Propeller på = drone behandles som “skarp”</li>
+        <li>Tjek batteri, skruer, props, og at alt sidder fast</li>
+        <li>Failsafe sat korrekt (motor stop)</li>
+        <li>Flyv kun når området er ryddet</li>
+      </ul>
+
+      <div class="hr"></div>
+
+      <h2>Under flyvning</h2>
+      <ul>
+        <li>Hold afstand til mennesker/dyr</li>
+        <li>Stop hvis nogen går ind i området</li>
+        <li>Én pilot ad gangen (medmindre andet aftales)</li>
+        <li>Flyv kontrolleret – ingen “close calls”</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Batterier (LiPo) – kort</h2>
+      <ul>
+        <li>Brug kun lader beregnet til LiPo</li>
+        <li>Lad aldrig uden opsyn</li>
+        <li>Stop hvis batteri bliver varmt, oppustet eller lugter</li>
+        <li>Opbevar gerne i LiPo bag / brandsikker kasse</li>
+      </ul>
+      <div class="hr"></div>
+      <div class="note">
+        Jeg kan senere lave en “printbar” sikkerhedsplakat til banen, hvis du vil.
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">© <span id="year"></span> FPV Nord</div>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
