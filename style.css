@@ -1,3 +1,4 @@
+
 :root{
   --bg:#0b0f19;
   --panel:#121a2b;
@@ -28,9 +29,7 @@ a{color:inherit;text-decoration:none}
   padding:18px 16px 70px;
 }
 
-/* =========================
-   HEADER (STABIL)
-   ========================= */
+/* HEADER */
 .nav{
   position:sticky;
   top:0;
@@ -48,14 +47,13 @@ a{color:inherit;text-decoration:none}
   align-items:center;
   justify-content:space-between;
   gap:14px;
-  min-height:26px; /* LÅSER HEADER-HØJDEN */
 }
 
 /* BRAND / LOGO */
 .brand{
   display:flex;
   align-items:center;
-  min-height:26px;
+  gap:10px;
 }
 
 .brand a{
@@ -64,9 +62,10 @@ a{color:inherit;text-decoration:none}
 }
 
 .brandLogo{
-  height:26px;      /* LOGO-STØRRELSE */
+  height:44px;
   width:auto;
   display:block;
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,.35));
 }
 
 /* MENU */
@@ -96,9 +95,7 @@ a{color:inherit;text-decoration:none}
   font-weight:700;
 }
 
-/* =========================
-   HERO / TEKST
-   ========================= */
+/* HERO */
 .hero{
   margin-top:18px;
   padding:18px;
@@ -121,7 +118,7 @@ a{color:inherit;text-decoration:none}
 
 h1{
   margin:10px 0 6px;
-  font-size:clamp(28px, 4vw, 44px);
+  font-size:clamp(28px,4vw,44px);
   line-height:1.05;
 }
 
@@ -136,9 +133,14 @@ p{
   line-height:1.6;
 }
 
-/* =========================
-   CARDS & FIRKANTER
-   ========================= */
+/* GRID + CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:14px;
+  margin-top:12px;
+}
+
 .card{
   padding:16px;
   border-radius:16px;
@@ -146,22 +148,8 @@ p{
   background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
 }
 
-.grid.cards{
-  display:grid;
-  grid-template-columns:repeat(4, 1fr);
-  gap:12px;
-  margin-top:12px;
-}
-
-@media (max-width:900px){
-  .grid.cards{grid-template-columns:repeat(2,1fr)}
-}
-@media (max-width:520px){
-  .grid.cards{grid-template-columns:1fr}
-}
-
 .box{
-  padding:12px;
+  padding:14px;
   border-radius:14px;
   border:1px solid var(--border);
   background:rgba(255,255,255,.03);
@@ -175,12 +163,10 @@ p{
 .box p{
   margin:0;
   font-size:14px;
-  color:var(--muted);
+  color:rgba(234,240,255,.75);
 }
 
-/* =========================
-   LISTS & FOOTER
-   ========================= */
+/* LISTS */
 ul{
   margin:0;
   padding-left:18px;
@@ -188,16 +174,14 @@ ul{
   line-height:1.7;
 }
 
+/* FOOTER */
 .footer{
   margin-top:18px;
   font-size:13px;
   color:rgba(234,240,255,.55);
 }
 
-/* =========================
-   MOBIL
-   ========================= */
+/* MOBIL */
 @media (max-width:700px){
-  .brandLogo{height:26px}
-  .navInner{min-height:52px}
+  .brandLogo{height:34px}
 }
